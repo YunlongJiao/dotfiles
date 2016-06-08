@@ -42,7 +42,7 @@ alias sshcbio='ssh yjiao@cbio.ensmp.fr'
 alias sshcluster='ssh -A -t yjiao@cbio.ensmp.fr ssh -A thalassa'
 alias sshcurie='ssh yjiao@u900-bdd-1-160-6929'
 alias sshcipf='ssh yjiao@crom01'
-
+alias tmuxcc='less ~/Documents/PhD1/Etudes/cheatsheets/tmux-cheatsheet.markdown'
 alias kendall='cd $HOME/Documents/PhD1/Projects/kendallkernel/'
 alias wavelet='cd $HOME/Documents/PhD1/Projects/graphwavelet/'
 alias rankagg='cd $HOME/Documents/PhD1/Projects/rankagg_and_kernels/'
