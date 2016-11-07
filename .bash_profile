@@ -35,8 +35,11 @@ export LIBRARY_PATH
 
 # added by Anaconda 2.3.0 installer
 export PATH="/Users/marc/anaconda/bin:$PATH"
+# add generalized fused lasso c library for graphwavelets projects
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/graphwavelet/bin/gfl/cpp/lib/
 
-alias ll='ls -al'
+# Alias
+alias ll='ls -ahl'
 
 alias sshcbio='ssh yjiao@cbio.ensmp.fr'
 alias sshcluster='ssh -A -t yjiao@cbio.ensmp.fr ssh -A thalassa'
