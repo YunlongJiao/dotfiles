@@ -26,17 +26,17 @@ export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
-## C_INCLUDE_PATH=/usr/local/include
-## export C_INCLUDE_PATH
-## CPLUS_INCLUDE_PATH=/usr/local/include
-## export CPLUS_INCLUDE_PATH
-## LIBRARY_PATH=/usr/local/lib
-## export LIBRARY_PATH
-
-# added by Anaconda 2.3.0 installer and gcc-6.2.0
-export PATH=/Users/marc/anaconda/bin:/usr/local/gcc-6.2.0/bin:$PATH
+# added by Anaconda 2.3.0 installer
+export PATH=/Users/marc/anaconda/bin:$PATH
 # add generalized fused lasso c library for graphwavelets projects
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/graphwavelet/bin/gfl/cpp/lib/
+
+## # add gcc-6.2.0
+## export PATH=/usr/local/gcc-6.2.0/bin:$PATH
+## export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
+## export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH
+## export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH
+## export DYLD_LIBRARY_PATH=/usr/local/lib:$DYLD_LIBRARY_PATH
 
 # Alias
 alias ll='ls -ahl'
