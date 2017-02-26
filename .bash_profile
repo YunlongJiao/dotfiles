@@ -12,7 +12,8 @@ source ~/.git-completion.bash
 # just colors!
 green="\[\033[0;32m\]"
 blue="\[\033[0;34m\]"
-purple="\[\033[0;35m\]"
+pink="\[\033[0;35m\]"
+orange="\[\033[38;5;208m\]"
 reset="\[\033[0m\]"
 
 # Change command prompt
@@ -20,8 +21,8 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
-# '\W' adds the name of the current directory
-export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+# '\w' adds the address of the current directory
+export PS1="$pink\u $orange@\h$green\$(__git_ps1) $blue[\w]: $reset"
 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -41,8 +42,8 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/grap
 # Alias
 alias ll='ls -ahl'
 
-alias sshcbio='ssh yjiao@ssh.cbio.ensmp.fr'
-alias sshcluster='ssh -A -t yjiao@ssh.cbio.ensmp.fr ssh -A thalassa'
+alias sshcbio='ssh ssh.cbio.ensmp.fr'
+alias sshcluster='ssh thalassa'
 alias sshcurie='ssh yjiao@u900-bdd-1-160-6929'
 alias sshcipf='ssh yjiao@crom01'
 alias tmuxcc='less $HOME/Documents/PhD1/Etudes/cheatsheets/tmux-cheatsheet.markdown'
