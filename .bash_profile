@@ -42,7 +42,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/grap
 # Alias
 alias ll='ls -ahl'
 
-alias sshcbio='ssh ssh.cbio.ensmp.fr'
+alias sshcbio='ssh cbio'
 alias sshcluster='ssh thalassa'
 alias sshcurie='ssh yjiao@u900-bdd-1-160-6929'
 alias sshcipf='ssh yjiao@crom01'
