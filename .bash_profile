@@ -1,6 +1,6 @@
 # from curie
- export http_proxy="www-cache:3128"
- export https_proxy="www-cache:3128"
+# export http_proxy="www-cache:3128"
+# export https_proxy="www-cache:3128"
 
 # from mines NOT WORKING!!
 # export http_proxy="http://proxy.ensmp.fr:8080"
