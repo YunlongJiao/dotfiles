@@ -21,8 +21,8 @@ source ~/.git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
-# '\w' adds the address of the current directory
-export PS1="$pink\u $orange@\h$green\$(__git_ps1) $blue[\w]: $reset"
+# '\W' adds the name of the current directory
+export PS1="$pink\u $orange@\h$green\$(__git_ps1) $blue\W $ $reset"
 
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
