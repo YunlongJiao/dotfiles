@@ -39,6 +39,10 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/grap
 ## export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH
 ## export DYLD_LIBRARY_PATH=/usr/local/lib:$DYLD_LIBRARY_PATH
 
+## force english for R
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Alias
 alias ll='ls -ahl'
 
