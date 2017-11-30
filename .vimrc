@@ -8,7 +8,9 @@ set hlsearch
 " disable folding
 
 set number
-set shiftwidth=3 
+set tabstop=4
+set shiftwidth=4 
+set expandtab
 colorscheme torte 
 set background=dark
 
