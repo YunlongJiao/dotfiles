@@ -46,10 +46,11 @@ export LC_ALL=en_US.UTF-8
 # Alias
 alias ll='ls -ahl'
 
-alias sshcbio='ssh cbio'
-alias sshcluster='ssh thalassa'
-alias sshcurie='ssh yjiao@u900-bdd-1-160-6929'
+alias sshcluster='ssh well'
+alias sshthalassa='ssh thalassa'
+
 alias tmuxcc='less $HOME/Documents/PhD1/Etudes/cheatsheets/tmux-cheatsheet.markdown'
+
 alias kendall='cd $HOME/Documents/PhD1/Projects/kendallkernel/'
 alias wavelet='cd $HOME/Documents/PhD1/Projects/graphwavelet/'
 alias rankagg='cd $HOME/Documents/PhD1/Projects/rankagg_and_kernels/'
