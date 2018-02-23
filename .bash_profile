@@ -48,6 +48,7 @@ alias ll='ls -ahl'
 
 alias sshcluster='ssh well'
 alias sshthalassa='ssh thalassa'
+alias sshcipf='ssh cipf'
 
 alias tmuxcc='less $HOME/Documents/PhD1/Etudes/cheatsheets/tmux-cheatsheet.markdown'
 
