@@ -35,6 +35,7 @@ export LC_ALL=en_US.UTF-8
 
 # Alias
 alias ll='ls -ahl'
+alias jn='jupyter-notebook'
 
 alias sshcluster='ssh well'
 alias sshthalassa='ssh thalassa'
@@ -52,6 +53,7 @@ alias dream8='cd $HOME/Documents/PhD1/Projects/dream8toxicogenetics/'
 alias webpage='cd $HOME/Documents/Postdoc1/Applications/webpage/'
 alias mm='cd $HOME/Documents/Postdoc1/Projects/MultiMuther/'
 alias direct='cd $HOME/Documents/Postdoc1/Projects/Direct/'
+alias mvgp='cd $HOME/Documents/Postdoc1/Projects/MVGP/'
 
 # added by Anaconda3 5.3.0 installer
 # >>> conda init >>>
