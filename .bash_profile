@@ -19,17 +19,7 @@ export PS1="🐻 $pink\u $orange@\h$green\$(__git_ps1) $blue\W $ $reset"
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
-## # Add generalized fused lasso c library for graphwavelets projects
-## export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/Users/marc/Documents/PhD1/Projects/graphwavelet/bin/gfl/cpp/lib/
-
-## # Add gcc-6.2.0
-## export PATH=/usr/local/gcc-6.2.0/bin:$PATH
-## export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH
-## export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH
-## export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH
-## export DYLD_LIBRARY_PATH=/usr/local/lib:$DYLD_LIBRARY_PATH
-
-## Force english language for R
+# Force english language for R
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
