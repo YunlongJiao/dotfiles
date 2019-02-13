@@ -61,3 +61,6 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+# Fix issues using conda with iTerm2 + tmux
+[[ -z $TMUX ]] || source /Users/marc/anaconda3/etc/profile.d/conda.sh; conda deactivate; conda activate base
