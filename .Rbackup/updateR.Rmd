@@ -13,7 +13,7 @@ Since the first publication of this post, a couple of packages have emerged to a
 setwd("~/.Rbackup/")
 tmp <- installed.packages()
 installedpkgs <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
-# save(installedpkgs, file="installed_old.rda")
+save(installedpkgs, file="installed_old.rda")
 ```
 
 2. Install the new version of R and let it do it’s thing.
