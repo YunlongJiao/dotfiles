@@ -1,0 +1,57 @@
+---
+title: "Upgrade R Without Losing Your Packages"
+author: "Data Science Riot!"
+date: "May 23, 2017"
+output: md_document
+---
+
+Since the first publication of this post, a couple of packages have emerged to automate this process. The installr package for Windows and the updateR package for OS X are particularly good. However, this continues to be a popular post, so I have decided to keep it up. This work-flow is short, sweet, and cross-platform.
+
+1. Before you upgrade, build a temp file with all of your old packages.
+
+```{r}
+setwd("~/.Rbackup/")
+tmp <- installed.packages()
+installedpkgs <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+# save(installedpkgs, file="installed_old.rda")
+```
+
+2. Install the new version of R and let it do it’s thing.
+
+3. Once you’ve got the new version up and running, reload the saved packages and re-install them from CRAN.
+
+```{r}
+setwd("~/.Rbackup/")
+load("installed_old.rda")
+tmp <- installed.packages()
+installedpkgs.new <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+missing <- setdiff(installedpkgs, installedpkgs.new)
+install.packages(missing)
+update.packages()
+```
+
+If you had any packages from BioConductor, you will need to reload those as well.
+
+```{r}
+load("installed_old.rda")
+tmp <- installed.packages()
+installedpkgs.new <- as.vector(tmp[is.na(tmp[,"Priority"]), 1])
+missing <- setdiff(installedpkgs, installedpkgs.new)
+BiocManager::install(missing)
+```
+
+All done, now you can get back to cracking out R code. This method helped me save a lot of time, hope someone else finds it useful!
+
+The following packages were installed from GitHub/Bitbucket manually.
+
+```{r}
+devtools::install_github("stephenturner/annotables")
+devtools::install_github("glmgen/genlasso")
+devtools::install_github("statsmaths/glmgen", subdir="R_pkg/glmgen")
+devtools::install_github("YunlongJiao/kernrank")
+devtools::install_github("jpvert/kmr")
+devtools::install_github("jpvert/kmr4toxicogenetics")
+devtools::install_bitbucket("lwaldron/survhd@default")
+devtools::install_github("jtleek/tspreg")
+devtools::install_github("mcveanlab/TreeWAS/TreeWAS")
+```
