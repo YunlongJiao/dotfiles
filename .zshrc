@@ -8,7 +8,9 @@ export ZSH="/Users/Paolo/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator load background_jobs history)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,6 +124,10 @@ alias webpage='cd $HOME/Documents/Postdoc1/Applications/webpage/'
 alias mm='cd $HOME/Documents/Postdoc1/Projects/MultiMuther/'
 alias direct='cd $HOME/Documents/Postdoc1/Projects/Direct/'
 alias mvgp='cd $HOME/Documents/Postdoc1/Projects/MVGP/'
+
+# Terminal colors
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxegedabagacad
 
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
